@@ -2,33 +2,6 @@ var scrollCurrentPoistion = 0;
 var lastScrollTop = 0;
 var swiper;
 
-// function scrollCheck(element) {
-//   $(window).scroll(function () {
-//     var st = $(this).scrollTop();
-//     var top_of_element = $(element).offset().top;
-//     var bottom_of_element = $(element).offset().top + $(element).outerHeight();
-//     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-//     var top_of_screen = $(window).scrollTop();
-//     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
-//       check(element);
-//     } else {
-//       unCheck(element);
-//     }
-//     // if (element === '#swiper') {
-//     //   if (st > lastScrollTop) {
-//     //     console.log(swiper)
-//     //     swiper.mousewheel.enableMousewheelControl();  
-//     //     swiper.update();
-//     //   } else {
-//     //     console.log('dont focus')
-//     //     swiper.mousewheel.disableMousewheelControl();  
-//     //     swiper.update();
-//     //   }
-//     //   lastScrollTop = st;
-//     // }
-//   });
-// }
-
 function check(element) {
   switch (element) {
     case '.slideUp':
@@ -55,9 +28,12 @@ function check(element) {
       $('.body').addClass('invertColor');
       break;
     case '#header4':
-      $("#grid1").addClass("active2");
-      $("#grid2").addClass("active3");
-      $("#grid3").addClass("active2");
+      // $("#grid1").addClass("active2");
+      // $("#grid2").addClass("active3");
+      // $("#grid3").addClass("active2");
+
+      $('.slideUpCard').addClass('slideUpCardActive')
+
       $("#header4").addClass("active");
       $("#line3").addClass("activeWidth2");
       $('.desClass').addClass('active2');
@@ -78,11 +54,8 @@ function check(element) {
       $("#header7").addClass("active");
       break;
     case '#coll':
-      if (scrollCurrentPoistion === 0) {
-        scrollCurrentPoistion = $(window).scrollTop() + 250;
-      }
-      var left = $(window).scrollTop() - scrollCurrentPoistion;
-      $('#coll').css('left', left);
+      $('.heightZero').addClass('heightOne');
+      $('.zoomZero').addClass('scaleOne');
       break;
   }
 }
@@ -113,9 +86,11 @@ function unCheck(element) {
       break;
     case '#header4':
       $("#header4").removeClass("active");
-      $("#grid1").removeClass("active2");
-      $("#grid2").removeClass("active3");
-      $("#grid3").removeClass("active2");
+      // $("#grid1").removeClass("active2");
+      // $("#grid2").removeClass("active3");
+      // $("#grid3").removeClass("active2");
+      $('.slideUpCard').removeClass('slideUpCardActive')
+
       $("#line3").removeClass("activeWidth2");
       break;
     case '#header6':
@@ -133,6 +108,10 @@ function unCheck(element) {
       break;
     case '#line2':
       $("#line2").removeClass("activeWidth2");
+      break;
+    case '#coll':
+      $('.heightZero').removeClass('heightOne');
+      $(".zoomZero").removeClass("scaleOne");
       break;
   }
 
@@ -162,20 +141,7 @@ window.onload = function () {
     mousewheelReleaseOnEdges: true
   });
   $(".slideUp").addClass("active");
-  // scrollCheck('.slideUp');
-  // scrollCheck('#description1');
-  // scrollCheck('#line1');
-  // scrollCheck('#line2');
-  // scrollCheck('#button1');
-  // scrollCheck('#header2');
-  // scrollCheck('#header3');
-  // scrollCheck('#description2');
-  // scrollCheck('#coll');
-  // scrollCheck('#header4');
-  // scrollCheck('#header5');
-  // scrollCheck('#header6');
-  // scrollCheck('#header7');
-  // scrollCheck('#swiper');
+
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
@@ -199,7 +165,7 @@ window.onload = function () {
         unCheck('#header3');
         unCheck('#description2');
         unCheck('#line2');
-
+        unCheck('#header4');
       }
       if (func['currentElements']['el2']) {
         unCheck('.slideUp');
@@ -212,41 +178,38 @@ window.onload = function () {
         check('#header3');
         check('#description2');
 
-        unCheck('#header4');
         unCheck('#line3');
         unCheck('#header5');
       }
       if (func['currentElements']['el3']) {
-        unCheck('#header2');
+        // unCheck('#header2');
         unCheck('#header3');
         unCheck('#description2');
         unCheck('#line2');
 
         check('#header4');
-        check('#line3');
-        check('#header5');
+        // check('#line3');
+        // check('#header5');
 
         unCheck('#header6');
         unCheck('#header7');
+        unCheck('#coll');
       }
       if (func['currentElements']['el4']) {
+        unCheck('#header2');
+        check('#header4');
+        // check('#line3');
+        check('#header5');
 
+        check('#coll');
       }
       if (func['currentElements']['el5']) {
-        // unCheck('#header2');
-        // unCheck('#header3');
-        // unCheck('#description2');
-        // unCheck('#line2');
-
-        // unCheck('#header4');
-        // unCheck('#line3');
-        // unCheck('#header5');
 
         check('#header6');
         check('#header7');
       }
       if (func['currentElements']['el6']) {
-
+        unCheck('#coll');
         unCheck('#header4');
         unCheck('#line3');
         unCheck('#header5');

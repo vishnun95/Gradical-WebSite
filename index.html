@@ -13,7 +13,8 @@
 
 <body class="body animateSlow">
   <header>
-    <div class="logo-wrap">
+    <div class="header" id="navbar">
+      <div class="logo-wrap">
         <img src="media/img/logo.svg" class="logo" />
       </div>
       <nav>
@@ -24,10 +25,11 @@
           <li class="exampleClass"><a href="#">CONTACT</a></li>
         </ul>
       </nav>
-      <button class="hamburger">
-        <div class="bar">
-        </div>
-      </button>
+    </div>
+    <button class="hamburger">
+      <div class="bar">
+      </div>
+    </button>
   </header>
   <nav class="mobile-nav">
     <li><a href="#">AGENCY</a></li>
@@ -50,17 +52,21 @@
             <div class="slideUp slideUp2 animate">DOMESTICATED</div>
           </div>
         </div>
-        </br>
+        <!-- </br> -->
       </h1>
-      <h3 id="description1" class="animateSlow slideIn" data-scroll data-scroll-call="first">
-        Digital agency working along startups and evolving brands </br>
-        that are brave enough to think ahead and change at the pace </br>
-        of the new world.</br>
+      <h3 id="description1" class="animateSlow" data-scroll data-scroll-call="first">
+        <div class="slideUpParent">
+          <div class="slideUpContainer">
+            <div class="slideUp slideUp3  animate"> Digital agency working along startups and evolving brands </div>
+            <div class="slideUp  slideUp4 animate">that are brave enough to think ahead and change at the pace </div>
+            <div class="slideUp slideUp5 animate">of the new world.</div>
+          </div>
+        </div>
       </h3>
       <button id="button1" class="button animate">LETS TALK</button>
     </section>
     <section class="two" id="two" data-scroll-section>
-      <div id="line1" class="line animateSlow"></div>
+      <div id="line1" class="line lineAnimateSlow"></div>
       <div class="project-text">
         <h5 id="h5-top"><span class="emoji"></span>FEATURED PROJECT</h5>
         <h5>DESIGN + STRATEGY</h5>
@@ -123,17 +129,16 @@
         </div>
         <div id="swiper"></div>
       </div>
-      <div id="line2" class="line animateSlow"></div>
+      <div id="line2" class="line lineAnimateSlow"></div>
     </section>
     <section class="three" id="three" data-scroll-section>
       <div class="three-text-wrap">
         <h1 class="invertInner">
           <span class="emo animateSlow"></span></br>
-          <!-- WELCOME</br>
-        TRADECRAFT.</br> -->
+
           <div class="slideUpParent">
             <div class="slideUpContainer">
-              <div id="header2" data-scroll data-scroll-call="third" class="slideUp3 animateSlow">WELCOME
+              <div id="header2" class="slideUp3 animateSlow">WELCOME
               </div>
             </div>
           </div>
@@ -143,51 +148,189 @@
             </div>
           </div>
         </h1>
-        <h3 id="description2" class="animateSlow slideIn">
-          Digital agency working along startups and evolving brands that are </br>
-          brave enough to think ahead and change at the pace of the new world. </br>
-          (HOW WE BLEND STRAT+CREAT+TECH)</br>
+        <h3 id="description2" data-scroll data-scroll-call="third">
+
+          <div class="slideUpParent">
+            <div class="slideUpContainer">
+              <div class="slideUp4 animate">
+                <div>
+                  Digital agency working along startups and evolving brands that are
+                </div>
+                <div>
+                  brave enough to think ahead and change at the pace of the new world.
+                </div>
+                (HOW WE BLEND STRAT+CREAT+TECH)
+              </div>
+            </div>
+          </div>
+
         </h3>
         <button class="button">LETS TALK</button>
       </div>
       <div class="grid">
-        <div id="grid1" class="moveLeft grid_items animateSlow">
-          <h2>STRATEGY</h2>
+        <div id="grid1" class="grid_items animateSlow">
+          <h2>
+            <div class="overflowHidden">
+              <div class="slideUpCard animateSlow">STRATEGY</div>
+            </div>
+          </h2>
           <ul>
-            <li>Website + App Design</li>
-            <li>Branding</li>
-            <li>3D & Motion</li>
-            <li>Content & Copywriting</li>
-            <li>Photo + Video Production</li>
-            <li>Sound design</li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay1">
+                  Website + App Design
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay2">
+                  Branding
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay3">
+                  3D & Motion
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay4">
+                  Content & Copywriting
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay5">
+                  Photo + Video Production
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay6">
+                  Sound design
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
-        <div id="grid2" class="moveUp grid_items animateSlow">
-          <h2>CREATIVE</h2>
+        <div id="grid2" class=" grid_items animateSlow">
+          <h2>
+            <div class="overflowHidden">
+              <div class="slideUpCard animateSlow">CREATIVE</div>
+            </div>
+          </h2>
           <ul>
-            <li>Website + App Design</li>
-            <li>Branding</li>
-            <li>3D & Motion</li>
-            <li>Content & Copywriting</li>
-            <li>Photo + Video Production</li>
-            <li>Sound design</li>
-            <li></li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay1">
+                  Website + App Design
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay2">
+                  Branding
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay3">
+                  3D & Motion
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay4">
+                  Content & Copywriting
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay5">
+                  Photo + Video Production
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay6">
+                  Sound design
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
-        <div id="grid3" class="moveRight grid_items animateSlow">
-          <h2>TECHNOLOGY</h2>
+        <div id="grid3" class=" grid_items animateSlow">
+          <h2>
+            <div class="overflowHidden">
+              <div class="slideUpCard animateSlow">TECHNOLOGY</div>
+            </div>
+          </h2>
           <ul>
-            <li>Website Development</li>
-            <li>Native & Web Apps</li>
-            <li>E-commerce</li>
-            <li>Minimum Viable Product</li>
-            <li>Prototyping</li>
-            <li>Analytics</li>
-            <li>Server Ops</li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay1">
+                  Website Development
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay2">
+                  Native & Web Apps
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay3">
+                  E-commerce
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay4">
+                  Minimum Viable Product
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay5">
+                  Prototyping
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay6">
+                  Analytics
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="overflowHiddenInner">
+                <div class="slideUpCard animateSlow delay7">
+                  Server Ops
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-      <div id="line3" class="line animateSlow"></div>
+      <!-- <div id="line2" class="line lineAnimateSlow"></div> -->
+      <div id="line3" class="line lineAnimateSlow"></div>
     </section>
     <section class="four" id="four" data-scroll-section>
       <div class="four-text-wrap">
@@ -220,12 +363,12 @@
           </h3>
         </div>
       </div>
-      <div class="four-icon-wrap" id="coll" data-scroll data-scroll-call="five">
-        <div class="four-icon"><img src="media/img/vanz.svg" alt=""></div>
-        <div class="four-icon"><img src="media/img/airbnb.svg" alt=""></div>
-        <div class="four-icon"><img src="media/img/nike.svg" alt=""></div>
-        <div class="four-icon"><img src="media/img/netflix.svg" alt=""></div>
-        <div class="four-icon"><img src="media/img/eqinox.svg" alt=""></div>
+      <div class="four-icon-wrap heightZero animateSlow" id="coll" data-scroll data-scroll-call="five">
+        <div class="four-icon animateSlow zoomZero"><img src="media/img/vanz.svg" alt=""></div>
+        <div class="four-icon animateSlow zoomZero"><img src="media/img/airbnb.svg" alt=""></div>
+        <div class="four-icon animateSlow zoomZero"><img src="media/img/nike.svg" alt=""></div>
+        <div class="four-icon animateSlow zoomZero"><img src="media/img/netflix.svg" alt=""></div>
+        <div class="four-icon animateSlow zoomZero"><img src="media/img/eqinox.svg" alt=""></div>
       </div>
       <div id="line4" class="line animateSlow"></div>
     </section>
@@ -251,7 +394,8 @@
           they are digested with the pursuit of beauty.</br>
           (PROJECT ENQUIRY FISHING CONTENT)</br>
         </h3>
-        <button data-scroll data-scroll-call="seven" id="buttonBottom" class="button moveUp animateSlow">LETS TALK</button>
+        <button data-scroll data-scroll-call="seven" id="buttonBottom" class="button moveUp animateSlow">LETS
+          TALK</button>
       </div>
     </section>
 

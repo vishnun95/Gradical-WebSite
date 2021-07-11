@@ -39,7 +39,11 @@ body {
   background-color: black;
 }
 
-header {
+.invertLineColor {
+  background-color: #ffffff;
+}
+
+.header {
   position: fixed;
   top: 0;
   right: 0;
@@ -110,11 +114,11 @@ nav {
 }
 
 .fix1 {
-  width: 170px;
+  width: 130px;
 }
 @media screen and (max-width: 1240px) and (min-width: 769px) {
   .fix1 {
-    width: 11.805555555555555vw;
+    width: 130px;
   }
 }
 
@@ -251,6 +255,13 @@ nav {
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
 }
+
+.lineAnimateSlow {
+  -webkit-transition-duration: 4000ms;
+  -moz-transition-duration: 4000ms;
+  -o-transition-duration: 4000ms;
+  transition-duration: 4000ms;
+}
 .slideUpParent{
   overflow-x: visible;
 }
@@ -258,6 +269,11 @@ nav {
   height: 180px;
   overflow-y: hidden;
 }
+
+#description1 .slideUpParent .slideUpContainer {
+  height: auto;
+}
+
 .slideUp{
   bottom: -180px;
   position: relative;
@@ -279,6 +295,13 @@ nav {
 }
 .slideUp2{
   transition-delay: 200ms; 
+}
+.slideUp4 {
+  transition-delay: 500ms;
+}
+
+.slideUp5 {
+  transition-delay: 800ms;
 }
 .active{
   bottom: 0px;
@@ -317,31 +340,55 @@ nav {
   opacity: 1;
 }
 #line2{
-  left: 50%;
+  /* left: 50%;
   width: 0%;
-  position: relative;
+  position: relative; */
+  margin-top: 35px;
+  width: 0%;
+  opacity: 0;
+  transition-delay: 500ms;
 }
 #line2.activeWidth2{
-  left: 0%;
-  width:100%;
+  /* left: 0%;
+  width:100%; */
+  width: 100%;
+  opacity: 1;
 }
 #line3{
-  left: 50%;
+  /* left: 50%;
   width: 0%;
-  position: relative;
+  position: relative; */
+  margin-top: 35px;
+  width: 0%;
+  opacity: 0;
+  transition-delay: 500ms;
 }
 #line3.activeWidth2{
-  left: 0%;
-  width:100%;
+  /* left: 0%;
+  width:100%; */
+  width: 100%;
+  opacity: 1;
 }
 #line4{
-  left: 50%;
+  /* left: 50%;
   width: 0%;
-  position: relative;
+  position: relative; */
+  margin-top: 35px;
+  width: 0%;
+  opacity: 0;
+  transition-delay: 500ms;
 }
 #line4.activeWidth2{
-  left: 0%;
-  width:100%;
+  /* left: 0%;
+  width:100%; */
+  width: 100%;
+  opacity: 1;
+}
+
+#coll.displayMarquee {
+  display: flex;
+  transition-duration: 2000;
+  height: 100px;
 }
 #button1{
   position: relative;
@@ -358,6 +405,32 @@ nav {
   -ms-transform:  scale(1);
   -o-transform: scale(1);
   transform:  scale(1);
+}
+.zoomZero{
+  -webkit-transform: scale(0);
+  -moz-transform:  scale(0);
+  -ms-transform:  scale(0);
+  -o-transform: scale(0);
+  transform:  scale(0);
+}
+.heightZero{
+  height: 10px;
+  bottom: 0px;
+  overflow: hidden;
+  margin-top: 150px;
+}
+.heightOne{
+  height: 136px;
+  margin-top: 0px;
+  transition-delay:100ms;
+}
+.scaleOne{
+  -webkit-transform: scale(1);
+  -moz-transform:  scale(1);
+  -ms-transform:  scale(1);
+  -o-transform: scale(1);
+  transform:  scale(1);
+  transition-delay: 500ms;
 }
 .invertColor #header2{
   color: white;
@@ -417,6 +490,43 @@ nav {
 #coll{
   position: relative;
   left: 0px;
+}
+.overflowHidden{
+  overflow: hidden;
+  height: 43px;
+}
+.slideUpCard{
+  bottom: -48px;
+  position: relative;
+}
+
+.overflowHiddenInner{
+    overflow: hidden;
+    height: 22px;
+}
+.slideUpCardActive{
+  bottom: 0px;
+}
+.delay1{
+  transition-delay: 200ms;
+}
+.delay2{
+  transition-delay: 400ms;
+}
+.delay3{
+  transition-delay: 600ms;
+}
+.delay4{
+  transition-delay: 800ms;
+}
+.delay5{
+  transition-delay: 1000ms;
+}
+.delay6{
+  transition-delay: 1200ms;
+}
+.delay7{
+  transition-delay: 1400ms;
 }
 /* animation for blissfull end */
 @media screen and (max-width: 768px) {
@@ -624,7 +734,15 @@ nav {
   line-height: 40px;
   letter-spacing: 0px;
 }
-
+.invertColor .grid_items h2{
+  color: white;
+}
+.invertColor .grid_items ul li{
+  color: white;
+}
+.invertColor .line{
+  background-color: white;
+}
 @media screen and (max-width: 1240px) and (min-width: 769px) {
   .grid_items h2 {
     font-family: FoundersGroteskXCondensed;
@@ -712,6 +830,7 @@ nav {
   width: 100%;
   background-color: #191515;
   margin-bottom: 93px;
+  /* height: 0px; */
 }
 
 .four-emoji {
