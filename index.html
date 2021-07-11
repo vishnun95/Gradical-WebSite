@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gradical</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <!--<div class="logo-wrap">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gradical</title>
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/locomotive.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="body animateSlow">
+  <header>
+    <!--<div class="logo-wrap">
         <img src="media/img/logo.svg" class="logo" />
       </div>
       <nav>
@@ -24,45 +28,122 @@
         <div class="bar">
         </div>
       </button>-->
-    </header>
-    <nav class="mobile-nav">
-          <li><a href="#">AGENCY</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CAREERS</a></li>
-          <li><a href="#">CONTACT</a></li>
-    </nav>
-    <section class="one">
+  </header>
+  <nav class="mobile-nav">
+    <li><a href="#">AGENCY</a></li>
+    <li><a href="#">PROJECTS</a></li>
+    <li><a href="#">CAREERS</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </nav>
+  <div class="contianer" data-scroll-container>
+    <section class="one" id="one" data-scroll-section>
       <h1>
-        BLISSFULLY <span><img class="fix1" src="media/img/smile.svg" alt=""></span></br>
-        DOMESTICATED</br>
+        <div class="slideUpParent">
+          <div class="slideUpContainer">
+            <div class="slideUp animate">BLISSFULLY <span class="zoom animate"><img class="fix1"
+                  src="media/img/smile.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideUpParent">
+          <div class="slideUpContainer">
+            <div class="slideUp slideUp2 animate">DOMESTICATED</div>
+          </div>
+        </div>
+        </br>
       </h1>
-      <h3>
+      <h3 id="description1" class="animateSlow slideIn" data-scroll data-scroll-call="first">
         Digital agency working along startups and evolving brands </br>
         that are brave enough to think ahead and change at the pace </br>
         of the new world.</br>
       </h3>
-      <button class="button">LETS TALK</button>
+      <button id="button1" class="button animate">LETS TALK</button>
     </section>
-    <section class="two">
-      <div class="line"></div>
+    <section class="two" id="two" data-scroll-section>
+      <div id="line1" class="line animateSlow"></div>
       <div class="project-text">
         <h5 id="h5-top"><span class="emoji"></span>FEATURED PROJECT</h5>
         <h5>DESIGN + STRATEGY</h5>
         <h5>©2021</h5>
       </div>
       <div class="slider-wrap">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-scroll data-scroll-call="two">
+              <div class="card">
 
+              </div>
+              <div class="projDetails">
+                <div class="view">VIEW</div>
+                PROJECT NAME
+                GOES HERE
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+              </div>
+              <div class="projDetails">
+                <div class="view">VIEW</div>
+                PROJECT NAME
+                GOES HERE
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+              </div>
+              <div class="projDetails">
+                <div class="view">VIEW</div>
+                PROJECT NAME
+                GOES HERE
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+              </div>
+              <div class="projDetails">
+                <div class="view">VIEW</div>
+                PROJECT NAME
+                GOES HERE
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+              </div>
+              <div class="projDetails">
+                <div class="view">VIEW</div>
+                PROJECT NAME
+                GOES HERE
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="swiper"></div>
       </div>
-      <div class="line"></div>
+      <div id="line2" class="line animateSlow"></div>
     </section>
-    <section class="three">
+    <section class="three" id="three" data-scroll-section>
       <div class="three-text-wrap">
-        <h1>
-          <span class="emo"></span></br>
-          WELCOME</br>
-          TRADECRAFT.</br>
+        <h1 class="invertInner">
+          <span class="emo animateSlow"></span></br>
+          <!-- WELCOME</br>
+        TRADECRAFT.</br> -->
+          <div class="slideUpParent">
+            <div class="slideUpContainer">
+              <div id="header2" data-scroll data-scroll-call="third" class="slideUp3 animateSlow">WELCOME
+              </div>
+            </div>
+          </div>
+          <div class="slideUpParent">
+            <div class="slideUpContainer">
+              <div id="header3" class="slideUp3 animateSlow">TRADECRAFT.</div>
+            </div>
+          </div>
         </h1>
-        <h3>
+        <h3 id="description2" class="animateSlow slideIn">
           Digital agency working along startups and evolving brands that are </br>
           brave enough to think ahead and change at the pace of the new world. </br>
           (HOW WE BLEND STRAT+CREAT+TECH)</br>
@@ -70,7 +151,7 @@
         <button class="button">LETS TALK</button>
       </div>
       <div class="grid">
-        <div class="grid_items">
+        <div id="grid1" class="moveLeft grid_items animateSlow">
           <h2>STRATEGY</h2>
           <ul>
             <li>Website + App Design</li>
@@ -81,7 +162,7 @@
             <li>Sound design</li>
           </ul>
         </div>
-        <div class="grid_items">
+        <div id="grid2" class="moveUp grid_items animateSlow">
           <h2>CREATIVE</h2>
           <ul>
             <li>Website + App Design</li>
@@ -93,7 +174,7 @@
             <li></li>
           </ul>
         </div>
-        <div class="grid_items">
+        <div id="grid3" class="moveRight grid_items animateSlow">
           <h2>TECHNOLOGY</h2>
           <ul>
             <li>Website Development</li>
@@ -106,57 +187,89 @@
           </ul>
         </div>
       </div>
-      <div class="line"></div>
+      <div id="line3" class="line animateSlow"></div>
     </section>
-    <section class="four">
+    <section class="four" id="four" data-scroll-section>
       <div class="four-text-wrap">
         <h1>
-          <span><img class="fix4" src="media/img/diamond.svg" alt=""></span>  COLLABS&</br>
-          PARTNERSHIPS
+          <div class="slideUpParent" data-scroll data-scroll-call="four">
+            <div class="slideUpContainer">
+              <div id="header4" class="slideUp3 animateSlow"><span><img class="fix4" src="media/img/diamond.svg"
+                    alt=""></span> COLLABS&
+              </div>
+            </div>
+          </div>
+          <div class="slideUpParent">
+            <div class="slideUpContainer">
+              <div id="header5" class="slideUp3 animateSlow">PARTNERSHIPS
+              </div>
+            </div>
+          </div>
         </h1>
-        
+
         <div class="four-subtext-wrap">
-          <h3>
-            We move at the speed of culture, tailoring materials specifically</br> 
-            for the platforms on which they are digested with the pursuit of</br> 
-            beauty.(GRAMMAR FIX THIS)</br> 
+          <h3 class="desClass animateSlow moveLeft">
+            We move at the speed of culture, tailoring materials specifically</br>
+            for the platforms on which they are digested with the pursuit of</br>
+            beauty.(GRAMMAR FIX THIS)</br>
           </h3>
-          <h3>
+          <h3 class="desClass animateSlow moveRight">
             the platforms on which they are</br>
-             digested with the pursuit of</br>
-              beauty. (WHATEVER)</br>
+            digested with the pursuit of</br>
+            beauty. (WHATEVER)</br>
           </h3>
         </div>
       </div>
-      <div class="four-icon-wrap">
+      <div class="four-icon-wrap" id="coll" data-scroll data-scroll-call="five">
         <div class="four-icon"><img src="media/img/vanz.svg" alt=""></div>
         <div class="four-icon"><img src="media/img/airbnb.svg" alt=""></div>
         <div class="four-icon"><img src="media/img/nike.svg" alt=""></div>
         <div class="four-icon"><img src="media/img/netflix.svg" alt=""></div>
         <div class="four-icon"><img src="media/img/eqinox.svg" alt=""></div>
       </div>
-      <div class="line"></div>
+      <div id="line4" class="line animateSlow"></div>
     </section>
-    <section class="five">
-      <div class="five-wrap">
+    <section class="five" id="five" data-scroll-section>
+      <div class="five-wrap" data-scroll data-scroll-call="six">
         <h1>
-          GOT A PROJECT</br>
-          IN MIND?</br>
+          <div class="slideUpParent">
+            <div class="slideUpContainer">
+              <div id="header6" class="slideUp3 animateSlow"> GOT A PROJECT
+              </div>
+            </div>
+          </div>
+          <div class="slideUpParent">
+            <div class="slideUpContainer">
+              <div id="header7" class="slideUp3 animateSlow">IN MIND?
+              </div>
+            </div>
+          </div>
         </h1>
-        <h3>
+        <h3 id="description3" class="animateSlow slideIn">
           We move at the speed of culture, tailoring</br>
           materials specifically for the platforms on which</br>
           they are digested with the pursuit of beauty.</br>
           (PROJECT ENQUIRY FISHING CONTENT)</br>
         </h3>
-        <button class="button">LETS TALK</button>
+        <button data-scroll data-scroll-call="seven" id="buttonBottom" class="button moveUp animateSlow">LETS TALK</button>
       </div>
     </section>
-    <footer>
-    </footer>
 
+    <section data-scroll-section>
+      <div class="footer"></div>
+    </section>
 
+  </div>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/jquery-migrate-3.3.2.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/locomotive.js"></script>
+  <script>
+    (function () {
+      var scroll = new LocomotiveScroll();
+    })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
